@@ -50,6 +50,13 @@ TABLE OF CONTENTS:
 
 
 
+/*-------------------
+3.0	GENERIC
+---------------------*/
+
+
+
+
 
 
 /*-------------------
@@ -57,18 +64,129 @@ TABLE OF CONTENTS:
 ---------------------*/
 
 
+/*---LISTS---*/
+
+ul {
+	border: .05rem solid #4F4F4F;
+	padding: 2em 3em;
+	list-style-type: none;
+}
+
+li {
+	margin-top: 1em;
+}
+
+li:first-child {
+	margin-top: 0;
+}
+
+/*---MEDIA---*/
+
+figcaption {
+	font-size: .5rem;
+}
+
 /*---TYPOGRAPHY---*/
 
+
+html {
+	font-family: 'acumin-pro', sans-serif;
+	font-size: 1.0rem;
+	line-height: 1.8em;
+	color: #292929;
+	
+}
+
+h1, h2, h3 {
+	font-family: 'futura', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 2.2rem;
+	line-height: .9em;
+}
+
+h2 {
+	font-size: 1.55rem;
+	margin-top: 2em;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1rem;
+	margin-bottom: 0;
+	line-height: 1.1em;
+}
+
+#bonus {
+	font-size: .9rem;
+	color: #CC0003;
+}
+
+#bonus h3, li {
+	font-family: 'acumin-pro-condensed', sans-serif;
+	font-size: 1.3rem;
+}
+
+#bonus h3 {
+	font-weight: 900;
+}
+
+#byline {
+	font-size: .8rem;
+	color: #5A5A5A;
+}
+
+
 @media only screen and (min-width: 768px) {
+	
 	html {
-		
+		font-size: 1.1rem;
 	}
+	
+	h1 {
+		font-size: 2.3rem;
+	}
+	
 }
 
 @media only screen and (min-width: 1024px){
+	
 	html {
-		
+		font-size: 1.2rem;
 	}
+	h1 {
+		font-size: 2.5rem;
+	}
+	
+}
+
+@media only screen and (max-width: 500px){
+	
+	figure, figcaption {
+		display: none;
+	}
+}
+
+
+/*-------------------------
+5.0	OBJECTS
+---------------------------*/
+
+#bg-yel {
+	padding: .5em 2em;
+}
+/*-------------------------
+7.0	UTILITIES
+---------------------------*/
+
+
+/*---COLORS---*/
+
+#bg-yel {
+	background-color: #FFFCBE;
 }
 
 
