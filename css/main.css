@@ -46,6 +46,18 @@ TABLE OF CONTENTS:
 /*---SIZE---*/
 
 
+/*----------------------------------------
+------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -66,13 +78,14 @@ TABLE OF CONTENTS:
 
 /*---LISTS---*/
 
+
 ul {
-	border: .05rem solid #4F4F4F;
-	padding: 2em 3em;
+	margin-bottom: 0;
 	list-style-type: none;
 }
 
 li {
+	font: 1.2rem 'acumin-pro-condensed', sans-serif;
 	margin-top: 1em;
 }
 
@@ -80,21 +93,17 @@ li:first-child {
 	margin-top: 0;
 }
 
+
 /*---MEDIA---*/
 
-figcaption {
-	font-size: .5rem;
-}
 
 /*---TYPOGRAPHY---*/
 
 
 html {
-	font-family: 'acumin-pro', sans-serif;
-	font-size: 1.0rem;
+	font: 1.0rem 'acumin-pro', sans-serif;
 	line-height: 1.8em;
 	color: #292929;
-	
 }
 
 h1, h2, h3 {
@@ -115,29 +124,23 @@ h2 {
 }
 
 h3 {
-	font-size: 1rem;
-	margin-bottom: 0;
+	font-size: 1.2rem;
+	margin: 2.5em 0 0;
 	line-height: 1.1em;
 }
 
-#bonus {
-	font-size: .9rem;
-	color: #CC0003;
+h4 {
+	margin-bottom: 0;
 }
 
-#bonus h3, li {
-	font-family: 'acumin-pro-condensed', sans-serif;
-	font-size: 1.3rem;
+#best h3 {
+	margin-top: 0;
 }
 
-#bonus h3 {
-	font-weight: 900;
-}
 
-#byline {
-	font-size: .8rem;
-	color: #5A5A5A;
-}
+
+
+
 
 
 @media only screen and (min-width: 768px) {
@@ -147,7 +150,11 @@ h3 {
 	}
 	
 	h1 {
-		font-size: 2.3rem;
+		font-size: 3rem;
+	}
+	
+	.wrapper {
+		width: 75%;
 	}
 	
 }
@@ -158,14 +165,18 @@ h3 {
 		font-size: 1.2rem;
 	}
 	h1 {
-		font-size: 2.5rem;
+		font-size: 3.5rem;
+	}
+	
+	.wrapper {
+		width: 65%;
 	}
 	
 }
 
 @media only screen and (max-width: 500px){
 	
-	figure, figcaption {
+	img {
 		display: none;
 	}
 }
@@ -175,9 +186,59 @@ h3 {
 5.0	OBJECTS
 ---------------------------*/
 
-#bg-yel {
+
+#best {
+	border: .05rem solid #4F4F4F;
+	padding: 2em 3em;
+}
+
+
+#bg-yel, #bonus {
 	padding: .5em 2em;
 }
+
+#bonus p {
+	margin-top: 0;
+}
+
+aside, #best {
+	margin: 2em 0;
+}
+
+
+/*-------------------------
+6.0	COMPONENTS
+---------------------------*/
+
+/*---BUTTONS---*/
+
+a {
+	font-style: italic;
+	color: #585858;
+}
+
+a:hover {
+	color:#2C7FE4;
+}
+
+
+
+h1+p {
+	font-size: .8rem;
+	color: #5A5A5A;
+}
+
+
+#bonus h3 {
+	font-weight: 900;
+}
+
+#bonus {
+	font-size: .9rem;
+}
+
+
+
 /*-------------------------
 7.0	UTILITIES
 ---------------------------*/
@@ -185,7 +246,7 @@ h3 {
 
 /*---COLORS---*/
 
-#bg-yel {
+#bg-yel, #bonus {
 	background-color: #FFFCBE;
 }
 
